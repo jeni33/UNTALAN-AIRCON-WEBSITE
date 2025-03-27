@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-20"> <!-- Adjust padding to match navbar height -->
+
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="img/logo-removebg-preview.png" class="h-16" alt="CoolBreeze" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-blue-900">CoolBreeze</span>
+            </a>
+    
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+    
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden md:flex space-x-8" id="navbar">
+                <ul class="flex space-x-8 font-medium">
+                    <li><a href="index.html" class="py-2 px-3 text-gray-900 hover:text-blue-900">Home</a></li>
+                    <li><a href="about.html" class="py-2 px-3 text-gray-900 hover:text-blue-900">About</a></li>
+                    <li><a href="contact.html" class="py-2 px-3 text-gray-900 hover:text-blue-900">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+            <ul class="flex flex-col text-center p-4 space-y-2">
+                <li><a href="index.html" class="block py-2 text-gray-900 hover:text-blue-900">Home</a></li>
+                <li><a href="about.html" class="block py-2 text-gray-900 hover:text-blue-900">About</a></li>
+                <li><a href="contact.html" class="block py-2 text-gray-900 hover:text-blue-900">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- About Section -->
+    <section class="bg-gray-100 px-6 lg:px-20 py-12">
+        <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="img/about.jpg" class="rounded-lg shadow-md w-full h-auto lg:w-[90%]" alt="About CoolBreeze">
+            </div>
+            <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-12">
+                <p class="text-blue-600 font-semibold uppercase tracking-widest">About Us</p>
+                <h2 class="text-4xl font-bold text-gray-900 mt-2">Delivering Comfort with Innovation</h2>
+                <p class="text-gray-600 mt-4">CoolBreeze has been a leading provider of air conditioning solutions for years. We specialize in providing high-quality, energy-efficient, and cost-effective cooling systems for homes and businesses.</p>
+                <p class="text-gray-600 mt-4">With a commitment to customer satisfaction and technological advancement, our expert team ensures that every installation, repair, and maintenance service meets the highest industry standards.</p>
+                <div class="mt-6 flex space-x-6">
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold text-blue-900">10+</h3>
+                        <p class="text-gray-600">Years in Business</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold text-blue-900">5K+</h3>
+                        <p class="text-gray-600">Happy Clients</p>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold text-blue-900">99%</h3>
+                        <p class="text-gray-600">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+<!-- Special Offers Section -->
+<div class="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-lg mt-8">
+    <div class="text-center mb-6">
+        <h2 class="text-3xl font-bold text-gray-800">Special Offers & Pricing</h2>
+        <p class="text-gray-600 mt-1 max-w-xl mx-auto text-sm">Explore our exclusive discounts and pricing plans for professional AC maintenance and services.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <!-- Left Column (Discount Offers) -->
+        <div class="space-y-4">
+            <!-- First Discount Offer -->
+            <div class="relative bg-blue-100 p-4 rounded-lg text-center shadow-md">
+                <div class="absolute -top-2 left-3 bg-blue-700 text-white px-2 py-1 rounded-md text-xs">Limited Time</div>
+                <h3 class="text-blue-800 font-bold text-base">Discount Up to</h3>
+                <h2 class="text-3xl font-extrabold text-blue-900 mt-1">20% OFF</h2>
+                <p class="text-blue-700 text-sm mt-1">Gas Filling</p>
+                <img src="img/gasfilling.jpg" alt="Technician Working" class="w-full h-40 object-cover mt-3 rounded-lg shadow-sm">
+            </div>
+
+            <!-- Second Discount Offer -->
+            <div class="relative bg-blue-100 p-4 rounded-lg text-center shadow-md">
+                <div class="absolute -top-2 left-3 bg-red-500 text-white px-2 py-1 rounded-md text-xs">New Customers</div>
+                <h3 class="text-blue-800 font-bold text-base">Discount Up to</h3>
+                <h2 class="text-3xl font-extrabold text-blue-900 mt-1">15% OFF</h2>
+                <p class="text-blue-700 text-sm mt-1">AC Maintenance</p>
+                <img src="img/ac service.jpg" alt="Technician Fixing AC" class="w-full h-40 object-cover mt-3 rounded-lg shadow-sm">
+            </div>
+        </div>
+
+        <!-- Right Column (Pricing Table) -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Service Pricing</h3>
+            <ul class="space-y-3 text-sm">
+                <li class="flex justify-between border-b pb-2"><span>Dust Cleaning</span><span class="font-bold text-blue-800">₱1,900.00</span></li>
+                <li class="flex justify-between border-b pb-2"><span>AC Maintenance</span><span class="font-bold text-blue-800">₱1,350.00</span></li>
+                <li class="flex justify-between border-b pb-2"><span>Gas Refilling</span><span class="font-bold text-blue-800">₱1,699.00</span></li>
+                <li class="flex justify-between border-b pb-2"><span>Leakage Checking</span><span class="font-bold text-blue-800">₱1,900.00</span></li>
+                <li class="flex justify-between"><span>Electrical Checking</span><span class="font-bold text-blue-800">₱2,500.00</span></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4 text-center">Additional Services</h3>
+            <ul class="space-y-3 text-sm">
+                <li class="flex justify-between border-b pb-2"><span>Compressor</span><span class="font-bold text-blue-800">₱1,900.00</span></li>
+                <li class="flex justify-between border-b pb-2"><span>HVAC System Service</span><span class="font-bold text-blue-800">₱1,350.00</span></li>
+                <li class="flex justify-between border-b pb-2"><span>AC Filter Change</span><span class="font-bold text-blue-800">₱1,699.00</span></li>
+                <li class="flex justify-between border-b pb-2"><span>Cooling Coil Service</span><span class="font-bold text-blue-800">₱1,900.00</span></li>
+                <li class="flex justify-between"><span>Cooling Check</span><span class="font-bold text-blue-800">₱2,500.00</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Of Special Offers Section -->
+
+<!-- Service Partners Section -->
+<section class="bg-gray-100 px-6 lg:px-20 py-12">
+    <div class="max-w-screen-xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-900">Our Service Partners</h2>
+        <p class="text-gray-600 mt-2">We collaborate with industry leaders to bring you the best air conditioning solutions.</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 items-center">
+            <img src="img/daikin.jpg" alt="Daikin" class="w-32 h-16 mx-auto object-contain">
+            <img src="img/mitsubishi.jpg" alt="Mitsubishi Electric" class="w-32 h-16 mx-auto object-contain">
+            <img src="img/carrier.jpg" alt="Carrier" class="w-32 h-16 mx-auto object-contain">
+            <img src="img/trane.jpg" alt="Trane" class="w-32 h-16 mx-auto object-contain">
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 items-center">
+            <img src="img/lg.jpg" alt="LG HVAC" class="w-32 h-16 mx-auto object-contain">
+            <img src="img/samsung.jpg" alt="Samsung Air Solutions" class="w-32 h-16 mx-auto object-contain">
+            <img src="img/panasonic.jpg" alt="Panasonic Heating & Cooling" class="w-32 h-16 mx-auto object-contain">
+            <img src="img/hitachi.jpg" alt="Hitachi Air Conditioning" class="w-32 h-16 mx-auto object-contain">
+        </div>
+    </div>
+</section>
+
+<!-- About Our Vision Section -->
+<section class="px-6 lg:px-20 py-12">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <!-- Image -->
+        <div>
+            <img src="img/vision.jpg" alt="Technician Working" class="rounded-lg shadow-md w-full">
+        </div>
+        <!-- Text Content -->
+        <div class="bg-blue-100 p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-blue-900">About Our Vision</h2>
+            <p class="text-gray-700 mt-4">
+                We aim to provide efficient, reliable, and eco-friendly air conditioning solutions tailored to your needs. Our commitment to quality and innovation ensures maximum comfort and customer satisfaction.
+            </p>
+            <p class="mt-6 font-semibold text-blue-900">
+                MON TO SAT: 09:00 AM - 05:00 PM <br>
+                SUNDAY: CLOSED
+            </p>
+            <button class="mt-6 bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition">
+                Contact Us
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-blue-900 text-white p-10 mt-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div>
+            <h3 class="text-lg font-semibold">CoolBreeze</h3>
+            <p class="text-sm mt-2">CoolBreeze delivers reliable, efficient, and fresh air solutions for your comfort</p>
+            <p class="mt-4">📞 +639123456789</p>
+            <p>📧 coolbreeze@gmail.com</p>
+            <p>🌐 www.coolbreeze.com</p>
+        </div>
+        <!-- Links -->
+        <div>
+            <h3 class="font-semibold">Company</h3>
+            <ul class="mt-2 space-y-2 text-sm">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-semibold">Help & Support</h3>
+            <ul class="mt-2 space-y-2 text-sm">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Locate Us</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+            <h3 class="font-semibold">Newsletter</h3>
+            <p class="text-sm mt-2">Subscribe to get the latest news and insights.</p>
+            <div class="mt-4 flex bg-white p-1 rounded-lg overflow-hidden">
+                <input type="email" placeholder="Your email address" class="p-2 w-full border-none text-black">
+                <button class="bg-orange-500 text-white px-4 py-2">→</button>
+            </div>
+            <p class="text-xs mt-2">By subscribing, you accept the Privacy Policy.</p>
+        </div>
+    </div>
+</footer>
+<!-- End Of Footer Section -->
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>

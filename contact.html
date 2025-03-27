@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-20"> <!-- Added padding to avoid navbar overlap -->
+
+<!-- Navbar -->
+<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 left-0 w-full z-50 shadow-md">
+    <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3">
+            <img src="img/logo-removebg-preview.png" class="h-16" alt="CoolBreeze" />
+            <span class="self-center text-2xl font-semibold text-blue-900">CoolBreeze</span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <!-- Navigation Links (Desktop) -->
+        <div class="hidden md:flex space-x-8" id="navbar">
+            <ul class="flex space-x-8 font-medium">
+                <li><a href="index.html" class="py-2 px-3 text-gray-900 hover:text-blue-900">Home</a></li>
+                <li><a href="about.html" class="py-2 px-3 text-gray-900 hover:text-blue-900">About</a></li>
+                <li><a href="contact.html" class="py-2 px-3 text-gray-900 hover:text-blue-900">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+        <ul class="flex flex-col text-center p-4 space-y-2">
+            <li><a href="index.html" class="block py-2 text-gray-900 hover:text-blue-900">Home</a></li>
+            <li><a href="about.html" class="block py-2 text-gray-900 hover:text-blue-900">About</a></li>
+            <li><a href="contact.html" class="block py-2 text-gray-900 hover:text-blue-900">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contact Header -->
+<div class="bg-white px-6 lg:px-20 py-12 flex flex-col lg:flex-row items-center">
+    <div class="lg:w-1/2 text-center lg:text-left">
+        <p class="text-blue-600 font-semibold uppercase tracking-widest">Let's Connect</p>
+        <h1 class="text-4xl font-bold text-gray-900 mt-2">
+            Have Questions? We're Here to Help!
+        </h1>
+        <p class="text-gray-600 mt-4">
+            Whether you need assistance, have inquiries, or want to schedule a service, reach out to us. Our team is ready to assist you.
+        </p>
+        <a href="#contact-form">
+            <button class="mt-6 bg-orange-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition">
+                Get in Touch
+            </button>
+        </a>
+    </div>
+    <div class="lg:w-1/2 mt-8 lg:mt-0">
+        <img src="img/contact header.jpg" alt="Contact Us" class="rounded-lg shadow-md w-full">
+    </div>
+</div>
+<!-- End Contact Header -->
+
+<!-- Appointment Booking Section -->
+<div class="max-w-5xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+    <div class="grid md:grid-cols-2">
+        <!-- Image Section -->
+        <div>
+            <img src="img/contact.jpg" alt="Technician Working" class="w-full h-full object-cover">
+        </div>
+        <!-- Form Section -->
+        <div class="p-8">
+            <h3 class="text-blue-600 uppercase text-sm font-semibold">Submit Enquiry</h3>
+            <h2 class="text-3xl font-bold text-gray-800 mt-2">Book An Appointment</h2>
+            <form action="#" class="mt-6 space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="text" placeholder="Inquiry Type" class="border p-3 rounded-lg w-full">
+                    <input type="email" placeholder="E-mail" class="border p-3 rounded-lg w-full">
+                </div>
+                <input type="text" placeholder="Your Name" class="border p-3 rounded-lg w-full">
+                <textarea placeholder="Message" class="border p-3 rounded-lg w-full h-32"></textarea>
+                <button class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 transition w-full">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Of Appointment Booking Section -->
+
+<!-- Google Maps Embed -->
+<section class="px-6 lg:px-20 py-10">
+    <div class="max-w-screen-lg mx-auto">
+        <h3 class="text-2xl font-bold text-gray-900 text-center">Find Us Here</h3>
+        <div class="mt-6">
+            <iframe class="w-full h-64 rounded-lg shadow-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0000000000005!2d-122.08400000000001!3d37.42199999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z37.422X!5e0!3m2!1sen!2sus!4v1639589999999!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-blue-900 text-white p-10 mt-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div>
+            <h3 class="text-lg font-semibold">CoolBreeze</h3>
+            <p class="text-sm mt-2">CoolBreeze delivers reliable, efficient, and fresh air solutions for your comfort</p>
+            <p class="mt-4">📞 +639123456789</p>
+            <p>📧 coolbreeze@gmail.com</p>
+            <p>🌐 www.coolbreeze.com</p>
+        </div>
+        <!-- Links -->
+        <div>
+            <h3 class="font-semibold">Company</h3>
+            <ul class="mt-2 space-y-2 text-sm">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="font-semibold">Help & Support</h3>
+            <ul class="mt-2 space-y-2 text-sm">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Locate Us</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <!-- Newsletter -->
+        <div>
+            <h3 class="font-semibold">Newsletter</h3>
+            <p class="text-sm mt-2">Subscribe to get the latest news and insights.</p>
+            <div class="mt-4 flex bg-white p-1 rounded-lg overflow-hidden">
+                <input type="email" placeholder="Your email address" class="p-2 w-full border-none text-black">
+                <button class="bg-orange-500 text-white px-4 py-2">→</button>
+            </div>
+            <p class="text-xs mt-2">By subscribing, you accept the Privacy Policy.</p>
+        </div>
+    </div>
+</footer>
+<!-- End Of Footer Section -->
+
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>
